@@ -10,11 +10,12 @@ html{
   scroll-behavior: smooth;
   --color: black;
   --color-highlight: grey;
-  ---shadow: #b664b0;
+  ---shadow: #grey;
   overflow-x: hidden;
   width: 100%;
   --text-gray: #3F4954;
   --bg-color: #0f0f0f;
+  --nav: white;
 
   /* gradient colors */
   --sky :  white;
@@ -69,25 +70,26 @@ html{
   background-color: black;
   color: white;
   --color: white;
+  --nav: black;
 }
 
 .button{
   color: #ffffff;
     box-shadow: 0 10px 20px -10px var(---shadow);
-    background: linear-gradient(135deg, #6699FF 0%, #FF3366 100%);
+    background: linear-gradient(90deg, hsla(263, 56%, 21%, 1) 0%, hsla(271, 88%, 38%, 1) 100%);
     padding: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 10px;
     font-size: 20px;
-    color:var(--color);
+    color:white;
     transition: background 0.2s ease,background 0.2s ease,box-shadow 0.2s ease;
 
 }
 
 .button:hover{
-      background: linear-gradient(90deg, hsla(220, 60%, 58%, 1) 0%, hsla(345, 72%, 52%, 1) 100%);
-      color: var(--color);
+      background: linear-gradient(90deg, hsla(263, 56%, 21%, 0.95) 0%, hsla(271, 88%, 38%, 0.75) 100%);
+      color: white;
       transition: background 0.2s ease,background 0.2s ease,box-shadow 0.2s ease;
 }
 
@@ -303,12 +305,12 @@ nav .nav-items .nav-link{
 }
 
 nav .nav-items .nav-link:hover{
-    background: var(--bg-color);
+    background: var(--color);
     transition: 0.7s;
 }
 
 nav .nav-items .nav-link:hover a{
-    color: white;
+    color: var(--nav);
 }
 
 nav .social {
@@ -504,4 +506,16 @@ grad{
 
 p{
   font-size: 20px;
+}
+
+.team{
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  border-radius: 100px;
+  background: lightblue;
+}
+
+th{
+  padding-right: 100px;
 }
