@@ -4,6 +4,11 @@
   transition: background-color 0.6s ease, color 0.05s ease;
 }
 
+body{
+  overflow-x:
+  max-width: 100%;
+}
+
 html{
   font-family: 'Inter', sans-serif;
 
@@ -16,9 +21,11 @@ html{
   --text-gray: #3F4954;
   --bg-color: #0f0f0f;
   --nav: white;
+  --team: #ebeef8;
 
   /* gradient colors */
   --sky :  white;
+  --link: darkblue;
 }
 
 
@@ -71,6 +78,8 @@ html{
   color: white;
   --color: white;
   --nav: black;
+  --team: #242424;
+  --link: lightblue;
 }
 
 .button{
@@ -273,10 +282,21 @@ a{
     text-decoration: none;
 }
 
+footer a{
+    text-decoration: none;
+    color: var(--link);
+}
+
+
 .text-black{
     color: var(--color);
 }
 
+table{
+  max-width: 100%;
+  overflow-x: hidden;
+  width: 100%;
+}
 nav{
     padding: 0 2rem;
     position: relative;
@@ -508,14 +528,102 @@ p{
   font-size: 20px;
 }
 
-.team{
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  border-radius: 100px;
-  background: lightblue;
+
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
 }
 
-th{
-  padding-right: 100px;
+.card {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.card .card-img {
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+}
+
+.card h1 {
+    font-size: 2rem;
+    color: var(--color);
+    margin: 1.5rem 0;
+}
+
+.job-title {
+    color: var(--color);
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+@media screen and (min-width:700px) {
+    .card-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        margin: 2rem;
+        transition: transform .5s;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.card:nth-child(1) {
+    animation: fadeIn .5s .25s backwards
+}
+
+.card:nth-child(2) {
+    animation: fadeIn .5s 0.5s backwards
+}
+
+.card:nth-child(3) {
+    animation: fadeIn .5s 0.75s backwards
+}
+
+.card:nth-child(4) {
+    animation: fadeIn .5s 1s backwards
+}
+
+.card:nth-child(5) {
+    animation: fadeIn .5s 1.25s backwards
+}
+
+.card:nth-child(6) {
+    animation: fadeIn .5s 1.5s backwards
+}
+
+.card:nth-child(7) {
+    animation: fadeIn .5s 1.75s backwards
+}
+
+.card:nth-child(8) {
+    animation: fadeIn .5s 2s backwards
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer{
+  text-align: center;
+  font-weight: bold;
 }
