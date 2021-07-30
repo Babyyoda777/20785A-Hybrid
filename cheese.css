@@ -1,0 +1,221 @@
+body{
+  background-color: black;
+  font-family: Inter, -apple-system, system-ui, sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+  margin: 0px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+  color: white;
+}
+
+* {
+  color:#fff; text-decoration: none;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+  color: white;
+}
+
+.nav-link:hover {
+  color: #white;
+  opacity: 1;
+  transition: 0.42s;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 3px;
+  content: "";
+  position: absolute;
+  background-color: white;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
+
+.header{
+      padding: 1.1rem 1rem;
+
+}
+
+.header ul {
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5rem;
+
+}
+
+.header li a {
+  text-decoration: none;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding-top: 0.75rem;
+  padding-left: 30px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header .menu {
+    clear: none;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+.hero{
+  -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: .5rem 0px 5rem;
+    width: 100%;
+}
+.pickles{
+  font-size: 38px;
+  font-weight: 200 !important;
+}
+
+@media (min-width: 48em){
+  .pickles {
+    font-size: 52px;
+}
+
+.tv{
+    position: relative;
+    clear: both;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom:10px;
+    border-radius: 8px;
+    background-color: #202020;
+    background-image: linear-gradient(120deg,#b03be8,#4958f5);
+    background-repeat: no-repeat,repeat;
+    font-size: 16px;
+    text-align: center;
+    -o-object-fit: fill;
+    object-fit: fill;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+
+grad{
+background: -webkit-linear-gradient(120deg,#b03be8,#4958f5);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
