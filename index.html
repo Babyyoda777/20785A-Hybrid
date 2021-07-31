@@ -3,38 +3,77 @@
    <title> Hybrid | 20785A </title>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="cheese.css">
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="https://raw.githubusercontent.com/akashyap2013/Responsive_Nav/master/css/all.css">
    <link rel="icon" href="img/logo.png" type="image/gif">
 </head>
+<body class="dark">
+   <!-- navigation menu    -->
 
+     <header class="header">
+   <a href="./index.html" class="logo"><img src="img/logo.png" height="70px"></a>
+   <input class="menu-btn" type="checkbox" id="menu-btn" />
+   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+   <ul class="menu">
+     <li><a href="#about">About Us</a></li>
+     <li><a href="#team">Our Team</a></li>
+     <li><a href="#resources">Resources</a></li>
+     <li><a href="#contact">Contact</a></li>
+   </ul>
+ </header>
+   <section class="hero">
+      <div class="container">
+        <h1 class="typed-headline">We are<grad> <span class="typed-words"></span></grad></h1>
+      </div>
+      <a href="#aboutus" class="button">About Us →</a>
+   </section>
+   <section id="aboutus" style="margin-top: 200px;">
+   <h2>About Us</h2>
+    <p> We are a year 9 team EDR consisting of previous VEX IQ members. Our members come from GearSquad, CyderStorm and OverDrive. Our builders are Rayaan Nadeem, Muhmmad Shah and Kiaron Lad. Chanul Athukolarage and Sayan Patel are our drivers. Joel Swdensky manages programming and Luc Tran is in charge of formatting and overlooking the design notebook, to which everyone contributes. </p>
 
-<body>
-
-    <header class="header">
-  <a href="./index.html" class="logo"><img src="img/logo.png" height="70px"></a>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <ul class="menu">
-    <li><a href="#about">About Us</a></li>
-    <li><a href="#team">Our Team</a></li>
-    <li><a href="#resources">Resources</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</header>
-<div class="hero">
-  <div class="hero">
-      <h1 class="typed-headline">We are<grad> <span class="typed-words"></span></grad></h1>
-
-  </div>
-<a href="#" class="button">Learn More </a>
-</div>
-
-
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-<script>
+    <div class="card-wrapper">
+        <div class="card">
+          <img src="img/babyyoda777.png" width="100px">
+          <h1>Muhammad Shah</h1>
+          <p class="job-title">Builder and designer</p>
+        </div>
+        <div class="card">
+          <img src="img/sayan.png" width="80px">
+          <h1>Sayan Patel</h1>
+          <p class="job-title">Programmer and driver</p>
+        </div>
+        <div class="card">
+          <img src="img/sayan.jpg" width="100px">
+          <h1>Chanul </h1>
+          <p class="job-title">Builder and driver</p>
+        </div>
+        <div class="card">
+          <img src="img/sayan.jpg" width="100px">
+          <h1>Rayaan Nadeem</h1>
+          <p class="job-title">Builder and designer</p>
+        </div>
+        <div class="card">
+          <img src="img/sayan.jpg" width="100px">
+          <h1>Joel Swdensky</h1>
+          <p class="job-title">Programmer and notebook</p>
+        </div>
+        <div class="card">
+          <img src="img/sayan.jpg" width="100px">
+          <h1>Luc Tran</h1>
+          <p class="job-title">Notebook and designer</p>
+        </div>
+        <div class="card">
+          <img src="img/sayan.jpg" width="100px">
+          <h1>Kiaron Lad</h1>
+          <p class="job-title">Builder and designer</p>
+        </div>
+    </div>
+   </section>
+   <footer>Copyright © Hybrid 2021-2022 <br> Designed and built by <a href="https://babyyoda777.tech">Babyyoda777 (Muhammad Shah)</a> and <a href="https://github.com/lolgeny">Lolgeny (Joel Swedensky)</a> </footer>
+   <!--    Custom Javascript      -->
+   <script src="./main.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+   <script>
    var typed = new Typed(".typed-words", {
    strings: ["Hybrid", "Creators", "Designers", "Makers"],
    typeSpeed: 80,
@@ -46,5 +85,6 @@
    cursorChar: "|",
    attr: null,
    });
-</script>
+ </script>
 </body>
+</html>
