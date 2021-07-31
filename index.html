@@ -6,25 +6,45 @@
    <link rel="stylesheet" href="cheese.css">
    <link rel="icon" href="img/logo.png" type="image/gif">
 </head>
+
+
 <body>
-  <nav>
-      <header class="header">
-        <a href="" class="logo"><grad>20785A</grad></a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-          <li><a class="nav-link nav-link-ltr" href="./index.html">Home</a></li>
-          <li><a class="nav-link nav-link-ltr" href="#">About Us</a></li>
-          <li><a class="nav-link nav-link-ltr" href="#">Contact Us</a></li>
-          <a class="nav-link nav-link-ltr" href="#">Resources</a>
-        </ul>
-      </header>
-  </nav>
-  <section class="hero">
-    <div class="pickles">
-      <h1>We are <grad class="typewrite" data-period="2000" data-type='[ "Hybrid", "Creators", "Designers", "Programmers" ]'><span class="wrap"></span></grad></h1>
-    </div>
-    <a href="#" class="tv"> Learn More →</a>
-  </section>
-  <script src="hmm.js" charset="utf-8"></script>
+
+    <header class="header">
+  <a href="./index.html" class="logo"><img src="img/logo.png" height="70px"></a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#team">Our Team</a></li>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</header>
+<div class="hero">
+  <div class="hero">
+      <h1 class="typed-headline">We are<grad> <span class="typed-words"></span></grad></h1>
+
+  </div>
+<a href="#" class="button">Learn More </a>
+</div>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+<script>
+   var typed = new Typed(".typed-words", {
+   strings: ["Hybrid", "Creators", "Designers", "Makers"],
+   typeSpeed: 80,
+   backSpeed: 120,
+   backDelay: 720,
+   startDelay: 0,
+   loop: true,
+   showCursor: false,
+   cursorChar: "|",
+   attr: null,
+   });
+</script>
 </body>
