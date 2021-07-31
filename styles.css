@@ -461,11 +461,11 @@ footer{
   }
   .typed-headline {
     font-size: 35.5px;
-    line-height: 120%;
     margin-left: 0px;
   }
-  .container{
-    margin-bottom: +30px;
+  .hero{
+    margin-bottom: 280px;
+    margin-top: 190px;
   }
 }
 
