@@ -9,10 +9,19 @@ body {
 	-webkit-font-smoothing: antialiased;
 	line-height: 1.6;
 	margin: 0px;
+	margin-left: 7px;
+	margin-right: 7px;
 	min-height: 100vh;
 	overflow-x: hidden;
 	width: 100%;
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 
 html {
 	font-family: 'Inter', sans-serif;
