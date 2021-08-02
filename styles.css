@@ -4,9 +4,7 @@
 }
 
 body {
-	background-color: black;
-	color: white;
-	font-family: Inter, -apple-system, system-ui, sans-serif;
+  font-family: Arial, sans-serif;
 	font-size: 14px;
 	-webkit-font-smoothing: antialiased;
 	line-height: 1.6;
@@ -31,24 +29,12 @@ html {
 	/* gradient colors */
 	--sky: white;
 	--link: darkblue;
+	--base: hsl(293, 95%, 50%);
+	--complimentary2: hsl(353, 95%, 50%);
+
+
 }
 
-.hero {
-	text-align: center;
-	justify-content: center;
-	padding-top: -80px;
-	width: 100%;
-	min-width: 220px;
-	margin: auto;
-	font-size: 40px;
-	margin-bottom: 100px;
-	text-align: center;
-	height: 50%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-}
 
 .dmode {
 	font-size: 20px;
@@ -93,7 +79,7 @@ html {
 .button {
 	color: #ffffff;
 	box-shadow: 0 10px 20px -10px var(---shadow);
-	background: linear-gradient(120deg, #b03be8, #4958f5);
+	background:  linear-gradient( 45deg, var(--base) 25%, var(--complimentary2) );
 	padding: 15px;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -105,14 +91,31 @@ html {
 
 .button:hover {
 	color: white;
-	transition: 0.42s;
-	opacity: 0.75;
+	cursor: pointer;
 }
 
+button{
+	background: transparent;
+	font-size: 0.875rem;
+	font-weight: 600;
+	border: none;
+	border-radius: 0.5rem;
+	transition: transform 150ms ease;
+}
+
+button:hover {
+	transform: scale(1.15);
+	cursor: pointer;
+}
+
+
 .header {
-	position: relative;
 	width: 100%;
 	z-index: 3;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: white;
 }
 
 .header ul {
@@ -140,7 +143,7 @@ html {
 	clear: both;
 	max-height: 0;
 	transition: max-height .2s ease-out;
-	background: black;
+	background: white;
 }
 
 .header .menu-icon {
@@ -153,7 +156,7 @@ html {
 }
 
 .header .menu-icon .navicon {
-	background: white;
+	background: black;
 	display: block;
 	height: 2px;
 	position: relative;
@@ -163,7 +166,7 @@ html {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-	background: white;
+	background: black;
 	content: '';
 	display: block;
 	height: 100%;
@@ -240,12 +243,13 @@ html {
 
 a {
 	text-decoration: none;
-	color: white;
+	color: black;
+	transition: transform 150ms ease;
 }
 
 a:hover {
-	color: grey;
-	transition: 0.42s;
+	transform: scale(1.15);
+	cursor: pointer;
 }
 
 footer a {
@@ -254,7 +258,7 @@ footer a {
 }
 
 grad {
-	background: linear-gradient(120deg, #b03be8, #4958f5);
+	background:  linear-gradient( 45deg, var(--base) 25%, var(--complimentary2) );
 	color: #B664B0;
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -265,14 +269,14 @@ grad {
 .hero {
 	text-align: center;
 	justify-content: center;
-	padding-top: 50px;
 	width: 100%;
-	clear: both;
 	min-width: 220px;
 	margin: auto;
 	font-size: 40px;
 	margin-bottom: 100px;
 	text-align: center;
+	margin-top: 100px;
+
 }
 
 .container {
@@ -298,84 +302,7 @@ grad {
 p {
 	font-size: 20px;
 }
-.card-wrapper {
-	display: flex;
-	align-items: center;
-	align-content: center;
-	flex-direction: column;
-}
-.card {
-	width: 20rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin: 2rem 0;
-}
-.card .card-img {
-	width: 100%;
-	height: 26rem;
-	object-fit: cover;
-}
-.card h1 {
-	font-size: 2rem;
-	color: var(--color);
-	margin: 1.5rem 0;
-}
-.job-title {
-	color: var(--color);
-	font-size: 1.5rem;
-	font-weight: 300;
-}
-@media screen and (min-width:700px) {
-	.card-wrapper {
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-	}
 
-	.card {
-		margin: 2rem;
-		transition: transform .5s;
-	}
-}
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
-.card:nth-child(1) {
-	animation: fadeIn .5s .25s backwards
-}
-.card:nth-child(2) {
-	animation: fadeIn .5s 0.5s backwards
-}
-.card:nth-child(3) {
-	animation: fadeIn .5s 0.75s backwards
-}
-.card:nth-child(4) {
-	animation: fadeIn .5s 1s backwards
-}
-.card:nth-child(5) {
-	animation: fadeIn .5s 1.25s backwards
-}
-.card:nth-child(6) {
-	animation: fadeIn .5s 1.5s backwards
-}
-.card:nth-child(7) {
-	animation: fadeIn .5s 1.75s backwards
-}
-.card:nth-child(8) {
-	animation: fadeIn .5s 2s backwards
-}
-.card:hover {
-	transform: scale(1.05);
-}
 footer {
 	text-align: center;
 	font-weight: bold;
@@ -389,7 +316,7 @@ footer {
 	content: "|";
 	display: inline;
 	animation: blink 1s infinite;
-	color: #8a8f98;
+	margin-left: -20px;
 }
 @media screen and (max-width: 991px) {
 	h1 {
@@ -418,7 +345,7 @@ footer {
 
 	h5 {
 		font-size: 16px;
-	}
+}
 }
 @media screen and (max-width: 479px) {
 	h1 {
@@ -436,7 +363,7 @@ footer {
 
 	.hero {
 		margin-bottom: 280px;
-		margin-top: 190px;
+		margin-top: 340px;
 	}
 }
 @keyframes blink {
@@ -451,4 +378,22 @@ footer {
 	100% {
 		opacity: 1;
 	}
+}
+
+
+.members{
+	display: flex;
+	max-width: 100%;
+	justify-content: space-evenly;
+	flex-wrap:wrap;
+}
+
+.individual{
+		transition: transform 150ms ease;
+		text-align:center;
+		margin-left: 30px;
+}
+
+.individual:hover{
+	transform: scale(1.1);
 }
