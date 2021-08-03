@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+	font-family: Arial, sans-serif;
 	font-size: 14px;
 	-webkit-font-smoothing: antialiased;
 	line-height: 1.6;
@@ -14,7 +14,8 @@ body {
 	min-height: 100vh;
 	overflow-x: hidden;
 	width: 100%;
-	-ms-overflow-style: none;  /* IE and Edge */
+	-ms-overflow-style: none;
+	/* IE and Edge */
 	scrollbar-width: none;
 	-webkit-overflow-scrolling: touch;
 	background: black;
@@ -22,9 +23,8 @@ body {
 }
 
 body::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
-
 
 html {
 	font-family: 'Inter', sans-serif;
@@ -43,10 +43,7 @@ html {
 	--link: darkblue;
 	--base: hsl(282, 95%, 50%);
 	--complimentary2: hsl(312, 95%, 50%);
-
-
 }
-
 
 .dmode {
 	font-size: 20px;
@@ -89,29 +86,21 @@ html {
 }
 
 .button {
-	color: #ffffff;
-	box-shadow: 0 10px 20px -10px var(---shadow);
-	background:  linear-gradient( 45deg, var(--base) 25%, var(--complimentary2) );
+	background: linear-gradient( 45deg, var(--base) 25%, var(--complimentary2));
 	padding: 15px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-radius: 10px;
 	font-size: 20px;
-	color: white;
-	transition: background 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+	transition: transform 150ms ease;
 }
 
-.button:hover {
-	color: white;
-	cursor: pointer;
-}
-
-.buttons{
+.buttons {
 	position: absolute;
 	margin-top: 180px;
 }
 
-button{
+button {
 	background: transparent;
 	font-size: 0.875rem;
 	font-weight: 600;
@@ -124,7 +113,6 @@ button:hover {
 	transform: scale(1.15);
 	cursor: pointer;
 }
-
 
 .header {
 	width: 100%;
@@ -275,7 +263,7 @@ footer a {
 }
 
 grad {
-	background:  linear-gradient( 45deg, var(--base) 25%, var(--complimentary2) );
+	background: linear-gradient( 45deg, var(--base) 25%, var(--complimentary2));
 	color: #B664B0;
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -297,8 +285,8 @@ grad {
 	justify-content: center;
 	align-items: center;
 	position: relative;
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 
@@ -317,7 +305,6 @@ grad {
 p {
 	font-size: 20px;
 }
-
 footer {
 	text-align: center;
 	font-weight: bold;
@@ -360,7 +347,7 @@ footer {
 
 	h5 {
 		font-size: 16px;
-}
+	}
 }
 @media screen and (max-width: 479px) {
 	h1 {
@@ -375,7 +362,6 @@ footer {
 		font-size: 35.5px;
 		margin-left: 0px;
 	}
-
 }
 @keyframes blink {
 	0% {
@@ -390,21 +376,17 @@ footer {
 		opacity: 1;
 	}
 }
-
-
-.members{
+.members {
 	display: flex;
 	max-width: 100%;
 	justify-content: space-evenly;
-	flex-wrap:wrap;
+	flex-wrap: wrap;
 }
-
-.individual{
-		transition: transform 150ms ease;
-		text-align:center;
-		margin-left: 30px;
+.individual {
+	transition: transform 150ms ease;
+	text-align: center;
+	margin-left: 30px;
 }
-
-.individual:hover{
+.individual:hover {
 	transform: scale(1.1);
 }
