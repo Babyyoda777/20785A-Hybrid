@@ -157,6 +157,8 @@ button:hover {
 	display: inline-block;
 	float: right;
 	padding: 28px 20px;
+	margin-right: 30px;
+	margin-top: 20px;
 	position: relative;
 	user-select: none;
 }

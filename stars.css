@@ -4,7 +4,8 @@
      background: transparent;
      -webkit-animation: star 90s linear infinite;
      animation: star 90s linear infinite;
-     z-index: 10;
+
+
 }
  .star:after {
      width: 1px;
