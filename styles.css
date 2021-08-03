@@ -16,11 +16,9 @@ body {
 	width: 100%;
 	-ms-overflow-style: none;  /* IE and Edge */
 	scrollbar-width: none;
-}
-
-background{
-	position: absolute;
-	background-image: url("img/background.webm");
+	-webkit-overflow-scrolling: touch;
+	background: black;
+	color: white;
 }
 
 body::-webkit-scrollbar {
@@ -43,8 +41,8 @@ html {
 	/* gradient colors */
 	--sky: white;
 	--link: darkblue;
-	--base: hsl(293, 95%, 50%);
-	--complimentary2: hsl(353, 95%, 50%);
+	--base: hsl(282, 95%, 50%);
+	--complimentary2: hsl(312, 95%, 50%);
 
 
 }
@@ -134,7 +132,7 @@ button:hover {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background: white;
+	background: black;
 }
 
 .header ul {
@@ -162,7 +160,7 @@ button:hover {
 	clear: both;
 	max-height: 0;
 	transition: max-height .2s ease-out;
-	background: white;
+	background: black;
 }
 
 .header .menu-icon {
@@ -175,7 +173,7 @@ button:hover {
 }
 
 .header .menu-icon .navicon {
-	background: black;
+	background: white;
 	display: block;
 	height: 2px;
 	position: relative;
@@ -185,7 +183,7 @@ button:hover {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-	background: black;
+	background: white;
 	content: '';
 	display: block;
 	height: 100%;
@@ -262,7 +260,7 @@ button:hover {
 
 a {
 	text-decoration: none;
-	color: black;
+	color: white;
 	transition: transform 150ms ease;
 }
 
