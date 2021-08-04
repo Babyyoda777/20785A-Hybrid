@@ -312,6 +312,12 @@ footer {
 	text-align: center;
 	font-weight: bold;
 }
+
+#aboutus{
+	padding-bottom: 100px;
+	padding-top: 100px;
+}
+
 .typed-headline {
 	white-space: nowrap;
 	text-align: left;
@@ -427,6 +433,32 @@ footer {
 */
 }
 
+
+.rocket {
+  z-index: -1;
+  position: absolute;
+  transform: translateX(-100px);
+  top: 155%;
+  pointer-events: none;
+  animation: rocket-movement 2s linear infinite  both running;
+}
+
+
+@-moz-keyframes rocket-movement {
+  100% {
+    -moz-transform: translate(1600px, -600px);
+  }
+}
+@-webkit-keyframes rocket-movement {
+  100% {
+    -webkit-transform: translate(1600px, -600px);
+  }
+}
+@keyframes rocket-movement {
+  100% {
+    transform: translate(1600px, -600px);
+  }
+}
 
 
 @-moz-keyframes move-astronaut {
