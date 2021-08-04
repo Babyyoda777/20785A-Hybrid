@@ -121,7 +121,7 @@ button:hover {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background: black;
+	background: transparent;
 }
 
 .header ul {
@@ -149,7 +149,7 @@ button:hover {
 	clear: both;
 	max-height: 0;
 	transition: max-height .2s ease-out;
-	background: black;
+	background: transparent;
 }
 
 .header .menu-icon {
@@ -392,4 +392,93 @@ footer {
 }
 .individual:hover {
 	transform: scale(1.1);
+}
+
+
+.object_astronaut {
+  animation: rotate-astronaut 200s infinite linear both alternate;
+}
+
+.box_astronaut {
+  z-index: -10 !important;
+  position: absolute;
+  top: 45%;
+  right: 10%;
+  will-change: transform;
+  animation: move-astronaut 50s infinite linear both alternate;
+}
+
+.earth {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  z-index: 0;
+	animation: earth 100s infinite linear both;
+  /*    animation: earth 100s infinite linear both;*/
+}
+
+.moon {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  /*
+    transform: rotate(0deg);
+    transition: transform ease-in 99999999999s;
+*/
+}
+
+
+
+@-moz-keyframes move-astronaut {
+  100% {
+    -moz-transform: translate(-540px, -540px);
+  }
+}
+@-webkit-keyframes move-astronaut {
+  100% {
+    -webkit-transform: translate(-540px, -540px);
+  }
+}
+@keyframes move-astronaut {
+  100% {
+    -webkit-transform: translate(-540px, -540px);
+    transform: translate(-540px, -540px);
+  }
+}
+@-moz-keyframes rotate-astronaut {
+  100% {
+    -moz-transform: rotate(-720deg);
+  }
+}
+@-webkit-keyframes rotate-astronaut {
+  100% {
+    -webkit-transform: rotate(-720deg);
+  }
+}
+@keyframes rotate-astronaut {
+  100% {
+    -webkit-transform: rotate(-720deg);
+    transform: rotate(-720deg);
+  }
+}
+
+
+@-moz-keyframes earth {
+  100% {
+    -moz-transform: rotate(-360deg);
+    transition: transform 20s;
+  }
+}
+@-webkit-keyframes earth {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transition: transform 20s;
+  }
+}
+@keyframes earth {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    transition: transform 20s;
+  }
 }
