@@ -118,7 +118,7 @@ button:hover {
 .header {
 	width: 100%;
 	z-index: 3;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	width: 100%;
 	background: transparent;
