@@ -523,11 +523,3 @@ footer {
 		top: 10%;
 	}
 }
-
-
-.motto{
-	display: flex;
-	text-align:center;
-	position: absolute;
-	margin-bottom: 130px;
-}
