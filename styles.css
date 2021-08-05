@@ -150,6 +150,8 @@ button:hover {
 	max-height: 0;
 	transition: max-height .2s ease-out;
 	background: transparent;
+	padding-left: 30px;
+	float: right;
 }
 
 .header .menu-icon {
@@ -311,11 +313,6 @@ p {
 footer {
 	text-align: center;
 	font-weight: bold;
-}
-
-#aboutus{
-	padding-bottom: 100px;
-	padding-top: 100px;
 }
 
 .typed-headline {
@@ -513,4 +510,24 @@ footer {
     transform: rotate(-360deg);
     transition: transform 20s;
   }
+}
+
+
+@media screen and (max-width: 991px){
+	.earth{
+		top: 15%;
+	}
+
+	.moon{
+		left: 30%;
+		top: 10%;
+	}
+}
+
+
+.motto{
+	display: flex;
+	text-align:center;
+	position: absolute;
+	margin-bottom: 130px;
 }
